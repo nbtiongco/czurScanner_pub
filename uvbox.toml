@@ -1,0 +1,10 @@
+[package]
+name = "czur_scanner"
+script = "mainuv "
+
+[pacakge.version]
+static = "0.1.0"
+
+[build]
+version = ""
+disable_version_ldflags = true

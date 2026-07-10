@@ -1,0 +1,31 @@
+[project]
+name = "czur-scanner"
+version = "0.1.0"
+description = "Czur 1200Pro Document Scanner with live detection"
+readme = "README.md"
+requires-python = ">=3.9,<3.11"
+
+dependencies = [
+    "fire>=0.5.0",
+<<<<<<< HEAD
+    "numpy>=2.0,<2.3",
+    "opencv-python>=4.8,<4.13",
+    "pyinstaller>=6.17.0",
+=======
+    "numpy>=1.26,<2.0",
+    "opencv-python>=4.12,<4.13",
+>>>>>>> bd4fb053864653a911bed27bc922e7588e194398
+]
+
+[tool.setuptools]
+packages = ["document_scanner"]
+package-dir = {"" = "src"}
+
+[dependency-groups]
+dev = [
+    "uvbox>=1.0.5",
+]
+
+[project.scripts]
+docscan = "document_scanner.main:main"
+
